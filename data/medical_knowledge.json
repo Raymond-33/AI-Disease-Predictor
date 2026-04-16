@@ -1,0 +1,284 @@
+{
+  "diseases": [
+    {
+      "name": "Common Cold",
+      "category": "Respiratory",
+      "symptoms": ["runny nose", "sneezing", "sore throat", "mild fever", "cough", "congestion", "headache", "fatigue", "mild body aches", "watery eyes", "nasal discharge", "low grade fever"],
+      "description": "The common cold is a viral infectious disease of the upper respiratory tract that primarily affects the nose and throat. It is caused by over 200 different viruses, most commonly rhinoviruses. It spreads through airborne droplets or direct contact with infected individuals.",
+      "diagnosis": "Typically self-diagnosed. Confirmed by symptom presentation. No specific antiviral treatment is available. Rest, hydration, and over-the-counter medications for symptom relief are recommended. Most cases resolve within 7-10 days. If symptoms worsen or persist beyond 10 days, consult a physician.",
+      "severity": "mild",
+      "treatment": "Rest, plenty of fluids, OTC cold medications, saline nasal spray, honey for cough",
+      "when_to_see_doctor": "If fever exceeds 103°F, symptoms worsen after 10 days, or breathing difficulty occurs"
+    },
+    {
+      "name": "Influenza (Flu)",
+      "category": "Respiratory",
+      "symptoms": ["high fever", "chills", "severe body aches", "muscle pain", "headache", "fatigue", "dry cough", "sore throat", "runny nose", "vomiting", "diarrhea", "sudden onset", "weakness", "loss of appetite"],
+      "description": "Influenza is a contagious respiratory illness caused by influenza viruses A, B, C, or D. It can cause mild to severe illness and sometimes can lead to death. Symptoms appear suddenly (unlike the common cold) and are more severe. The flu season typically peaks in winter months.",
+      "diagnosis": "Rapid influenza diagnostic tests (RIDTs), PCR tests, or viral culture can confirm the diagnosis. Antiviral medications like oseltamivir (Tamiflu) are most effective when started within 48 hours of symptom onset. Annual vaccination is the best prevention strategy.",
+      "severity": "moderate-to-severe",
+      "treatment": "Antiviral drugs (Tamiflu), rest, hydration, antipyretics for fever",
+      "when_to_see_doctor": "Immediately if experiencing difficulty breathing, persistent chest pain, confusion, or severe vomiting"
+    },
+    {
+      "name": "COVID-19",
+      "category": "Respiratory",
+      "symptoms": ["fever", "dry cough", "shortness of breath", "fatigue", "loss of taste", "loss of smell", "body aches", "headache", "sore throat", "congestion", "nausea", "diarrhea", "chills", "muscle pain", "difficulty breathing"],
+      "description": "COVID-19 is an infectious disease caused by the SARS-CoV-2 coronavirus. It primarily spreads through respiratory droplets when an infected person coughs, sneezes, or talks. Symptoms range from mild to severe, and some infected individuals remain asymptomatic. The virus can cause serious complications including pneumonia and acute respiratory distress syndrome.",
+      "diagnosis": "RT-PCR nasal swab tests or rapid antigen tests confirm infection. Monitor oxygen saturation. Isolate immediately if positive. Supportive care for mild cases; antiviral treatments like Paxlovid for high-risk individuals. Vaccination significantly reduces severe illness risk.",
+      "severity": "variable (mild to severe)",
+      "treatment": "Supportive care, antivirals for high-risk, oxygen therapy in severe cases, vaccination for prevention",
+      "when_to_see_doctor": "If oxygen saturation drops below 94%, difficulty breathing, persistent chest pain, or confusion"
+    },
+    {
+      "name": "Type 2 Diabetes",
+      "category": "Endocrine/Metabolic",
+      "symptoms": ["frequent urination", "excessive thirst", "unexplained weight loss", "blurred vision", "slow healing wounds", "frequent infections", "fatigue", "numbness in hands", "tingling in feet", "dark skin patches", "increased hunger", "dry mouth"],
+      "description": "Type 2 diabetes is a chronic metabolic disorder characterized by high blood glucose levels due to insulin resistance and relative insulin deficiency. It is the most common form of diabetes, accounting for 90-95% of all diabetes cases. Risk factors include obesity, physical inactivity, family history, and age.",
+      "diagnosis": "Confirmed through fasting blood glucose test (≥126 mg/dL), HbA1c test (≥6.5%), or oral glucose tolerance test. Management includes lifestyle modifications (diet and exercise), oral hypoglycemic agents (metformin), and possibly insulin therapy. Regular monitoring of blood glucose, kidney function, and eye health is essential.",
+      "severity": "chronic/serious",
+      "treatment": "Lifestyle changes, metformin, other oral medications, insulin therapy, regular glucose monitoring",
+      "when_to_see_doctor": "Immediately if symptoms are present; ongoing management with endocrinologist"
+    },
+    {
+      "name": "Hypertension (High Blood Pressure)",
+      "category": "Cardiovascular",
+      "symptoms": ["headache", "dizziness", "nosebleed", "chest pain", "shortness of breath", "visual disturbances", "pounding heartbeat", "blood in urine", "fatigue", "difficulty sleeping", "flushing", "irregular heartbeat"],
+      "description": "Hypertension is a condition where the force of blood against artery walls is consistently too high (systolic >130 mmHg or diastolic >80 mmHg). Often called the 'silent killer' because most people don't experience symptoms. It significantly increases the risk of heart disease, stroke, and kidney damage.",
+      "diagnosis": "Diagnosed through repeated blood pressure measurements. Lifestyle modifications including DASH diet, reduced sodium, regular exercise, and weight loss are first-line treatments. Antihypertensive medications (ACE inhibitors, beta-blockers, calcium channel blockers, diuretics) are prescribed based on severity and comorbidities.",
+      "severity": "chronic/serious",
+      "treatment": "Lifestyle modifications, antihypertensive medications, regular monitoring",
+      "when_to_see_doctor": "If BP exceeds 180/120 mmHg, or if accompanied by chest pain or severe headache (hypertensive crisis)"
+    },
+    {
+      "name": "Migraine",
+      "category": "Neurological",
+      "symptoms": ["severe headache", "throbbing head pain", "nausea", "vomiting", "sensitivity to light", "sensitivity to sound", "visual aura", "dizziness", "one sided headache", "neck pain", "blurred vision", "tingling sensation"],
+      "description": "Migraine is a complex neurological disorder characterized by recurrent, often debilitating headaches typically lasting 4-72 hours. They are often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. About 25-30% of migraine sufferers experience aura — temporary visual or sensory disturbances that precede the headache.",
+      "diagnosis": "Diagnosis is clinical, based on detailed symptom history and neurological examination. Brain imaging may be ordered to rule out other causes. Treatment involves acute therapy (triptans, NSAIDs) for active migraines and preventive therapy (beta-blockers, topiramate, CGRP antagonists) for frequent episodes. Identifying and avoiding triggers is crucial.",
+      "severity": "moderate-to-severe",
+      "treatment": "Triptans, NSAIDs, anti-nausea medications, preventive medications, trigger avoidance",
+      "when_to_see_doctor": "If worst headache of life, sudden onset, fever with headache, or neurological symptoms like confusion"
+    },
+    {
+      "name": "Asthma",
+      "category": "Respiratory",
+      "symptoms": ["wheezing", "shortness of breath", "chest tightness", "coughing at night", "coughing after exercise", "difficulty breathing", "breathlessness", "tight chest", "rattling sound in chest"],
+      "description": "Asthma is a chronic inflammatory lung disease that causes the airways to narrow, swell, and produce excess mucus. This makes breathing difficult and triggers coughing, wheezing, and shortness of breath. Triggers include allergens, air pollutants, respiratory infections, exercise, and cold air.",
+      "diagnosis": "Diagnosed using spirometry, peak flow measurements, and bronchodilator response testing. Management involves long-term controller medications (inhaled corticosteroids) and quick-relief bronchodilators (albuterol). Action plan creation and trigger identification are essential components of asthma management.",
+      "severity": "variable (mild to severe)",
+      "treatment": "Inhaled corticosteroids, bronchodilators, allergy medications, trigger avoidance, action plan",
+      "when_to_see_doctor": "During an acute attack, if rescue inhaler isn't working, or if oxygen levels drop"
+    },
+    {
+      "name": "Pneumonia",
+      "category": "Respiratory",
+      "symptoms": ["high fever", "productive cough", "chest pain when breathing", "shortness of breath", "fatigue", "chills", "sweating", "muscle aches", "confusion in elderly", "bluish lips", "rapid breathing"],
+      "description": "Pneumonia is an infection that inflames the air sacs in one or both lungs, which may fill with fluid or pus. It can be caused by bacteria, viruses, or fungi. Community-acquired pneumonia is most common, with Streptococcus pneumoniae being the leading bacterial cause. It can range from mild to life-threatening.",
+      "diagnosis": "Chest X-ray confirms diagnosis. Sputum culture, blood tests, and pulse oximetry assess severity. Bacterial pneumonia is treated with antibiotics (amoxicillin, azithromycin). Viral pneumonia may require antiviral therapy. Hospitalization may be needed for severe cases. Pneumococcal vaccines help prevent certain types.",
+      "severity": "moderate-to-severe",
+      "treatment": "Antibiotics (bacterial), antivirals (viral), oxygen therapy, hospitalization if severe",
+      "when_to_see_doctor": "Immediately if difficulty breathing, bluish lips, or severe chest pain"
+    },
+    {
+      "name": "Gastroenteritis (Stomach Flu)",
+      "category": "Gastrointestinal",
+      "symptoms": ["nausea", "vomiting", "diarrhea", "stomach cramps", "abdominal pain", "fever", "muscle aches", "headache", "loss of appetite", "dehydration", "watery stools"],
+      "description": "Gastroenteritis is inflammation of the stomach and intestines, typically caused by viral infections (norovirus, rotavirus) or bacterial contaminants. It spreads through contaminated food, water, or close contact with infected individuals. Symptoms usually appear 1-3 days after exposure and last 1-3 days.",
+      "diagnosis": "Usually diagnosed clinically. Stool culture may be ordered if bacterial cause is suspected or symptoms are severe. Treatment is primarily supportive — oral rehydration solutions, gradual reintroduction of bland foods. Antibiotics only for confirmed bacterial infections. Anti-diarrheal medications may be used with caution.",
+      "severity": "mild-to-moderate",
+      "treatment": "Oral rehydration, BRAT diet, rest, probiotics; antibiotics only if bacterial",
+      "when_to_see_doctor": "If unable to keep fluids down, blood in stool, high fever, or signs of severe dehydration"
+    },
+    {
+      "name": "Urinary Tract Infection (UTI)",
+      "category": "Urological",
+      "symptoms": ["burning urination", "frequent urination", "cloudy urine", "strong urine odor", "pelvic pain", "blood in urine", "lower abdominal pain", "urgency to urinate", "fever if kidney involved", "lower back pain"],
+      "description": "A urinary tract infection is a bacterial infection affecting any part of the urinary system including the kidneys, ureters, bladder, and urethra. Most infections involve the lower urinary tract (bladder and urethra). Women are at significantly higher risk due to shorter urethra length. E. coli is the causative agent in 80-85% of cases.",
+      "diagnosis": "Urine analysis and culture confirm infection and identify causative bacteria. Antibiotics (trimethoprim-sulfamethoxazole, nitrofurantoin, or fluoroquinolones) are first-line treatment. Course typically 3-7 days for uncomplicated UTIs. Cranberry juice and increased water intake help prevention. Recurrent UTIs may require prophylactic antibiotics.",
+      "severity": "mild-to-moderate",
+      "treatment": "Antibiotics, increased fluid intake, urinary analgesics for pain relief",
+      "when_to_see_doctor": "If fever, back pain, nausea develop (indicates kidney involvement) or symptoms don't improve in 2-3 days"
+    },
+    {
+      "name": "Anemia",
+      "category": "Hematological",
+      "symptoms": ["fatigue", "weakness", "pale skin", "shortness of breath", "dizziness", "cold hands and feet", "chest pain", "headache", "irregular heartbeat", "brittle nails", "poor concentration", "pale gums"],
+      "description": "Anemia is a condition where you don't have enough healthy red blood cells to carry adequate oxygen to your body's tissues. Types include iron-deficiency anemia (most common), vitamin B12 deficiency, folate deficiency, aplastic anemia, hemolytic anemia, and anemia of chronic disease. It can be caused by blood loss, decreased production, or increased destruction of red blood cells.",
+      "diagnosis": "Complete blood count (CBC) including hemoglobin, hematocrit, and red blood cell indices. Further tests include iron studies, B12 levels, folate, reticulocyte count. Treatment depends on underlying cause: iron supplements for iron-deficiency, B12 injections, blood transfusions in severe cases. Dietary modifications are important for nutritional anemias.",
+      "severity": "variable",
+      "treatment": "Iron/B12/folate supplements based on type, dietary changes, treating underlying cause",
+      "when_to_see_doctor": "If experiencing extreme fatigue, chest pain, shortness of breath at rest, or fainting"
+    },
+    {
+      "name": "Hypothyroidism",
+      "category": "Endocrine",
+      "symptoms": ["fatigue", "weight gain", "cold intolerance", "constipation", "dry skin", "hair loss", "depression", "slow heart rate", "muscle weakness", "puffy face", "hoarse voice", "high cholesterol", "memory problems", "menstrual irregularities"],
+      "description": "Hypothyroidism occurs when the thyroid gland doesn't produce enough thyroid hormones, slowing down many body functions. Hashimoto's thyroiditis (autoimmune) is the most common cause in developed countries. It affects women more often than men and becomes more common with age. If untreated, it can cause heart problems, nerve damage, and infertility.",
+      "diagnosis": "Blood tests measuring TSH (thyroid-stimulating hormone) and free T4 confirm diagnosis. Elevated TSH with low T4 indicates hypothyroidism. Treatment involves daily oral levothyroxine (synthetic T4 replacement). TSH levels are monitored every 6-12 months to adjust dosage. Most patients require lifelong treatment.",
+      "severity": "chronic/manageable",
+      "treatment": "Levothyroxine (synthetic thyroid hormone), regular TSH monitoring, dietary iodine",
+      "when_to_see_doctor": "If experiencing symptoms; ongoing management with endocrinologist"
+    },
+    {
+      "name": "Anxiety Disorder",
+      "category": "Mental Health",
+      "symptoms": ["excessive worry", "restlessness", "racing heart", "sweating", "trembling", "shortness of breath", "chest tightness", "difficulty concentrating", "irritability", "sleep problems", "panic attacks", "muscle tension", "gastrointestinal distress", "fear"],
+      "description": "Anxiety disorders are the most common mental health condition, characterized by excessive fear or worry that is difficult to control. Types include generalized anxiety disorder (GAD), panic disorder, social anxiety disorder, and specific phobias. They can significantly impair daily functioning and quality of life.",
+      "diagnosis": "Clinical evaluation using DSM-5 criteria, validated questionnaires (GAD-7, PHQ). Treatment combines cognitive-behavioral therapy (CBT) — the gold standard, medication (SSRIs or SNRIs as first-line, benzodiazepines for acute episodes), and lifestyle modifications including exercise, mindfulness, and stress management techniques.",
+      "severity": "variable (mild to severe)",
+      "treatment": "CBT therapy, SSRIs/SNRIs, mindfulness, regular exercise, breathing techniques",
+      "when_to_see_doctor": "If anxiety interferes with daily life, or if experiencing panic attacks"
+    },
+    {
+      "name": "Depression",
+      "category": "Mental Health",
+      "symptoms": ["persistent sadness", "loss of interest", "fatigue", "sleep problems", "appetite changes", "weight changes", "difficulty concentrating", "feelings of worthlessness", "hopelessness", "social withdrawal", "irritability", "suicidal thoughts", "crying spells"],
+      "description": "Major depressive disorder is a serious mental health condition causing persistent feelings of sadness and loss of interest. It affects how you feel, think, and handle daily activities. It involves changes in brain chemistry, particularly neurotransmitters like serotonin, norepinephrine, and dopamine. It is a leading cause of disability worldwide.",
+      "diagnosis": "Evaluated using PHQ-9 and clinical interview based on DSM-5 criteria. Symptoms must persist for at least 2 weeks. Treatment includes psychotherapy (CBT, interpersonal therapy), antidepressants (SSRIs like fluoxetine, sertraline), or combination. Electroconvulsive therapy (ECT) for treatment-resistant cases. Crisis intervention if suicidal.",
+      "severity": "serious (requires professional treatment)",
+      "treatment": "Antidepressants (SSRIs), psychotherapy (CBT), TMS, ECT in severe cases, lifestyle changes",
+      "when_to_see_doctor": "Immediately if experiencing suicidal thoughts; otherwise within 1-2 weeks of symptom onset"
+    },
+    {
+      "name": "Dengue Fever",
+      "category": "Infectious Disease",
+      "symptoms": ["high fever", "severe headache", "pain behind eyes", "joint pain", "muscle pain", "skin rash", "mild bleeding", "nausea", "vomiting", "fatigue", "bone pain", "low platelet count"],
+      "description": "Dengue fever is a mosquito-borne tropical disease caused by the dengue virus, transmitted by Aedes aegypti mosquitoes. It is prevalent in tropical and subtropical regions worldwide. Dengue shock syndrome and dengue hemorrhagic fever are severe, potentially life-threatening complications. There are four distinct serotypes of the virus.",
+      "diagnosis": "NS1 antigen test, ELISA for dengue antibodies (IgM/IgG), or PCR in early acute phase. CBC shows leukopenia and thrombocytopenia. No specific antiviral treatment exists. Management is supportive: hydration, antipyretics (avoid NSAIDs), monitoring platelet counts. Hospitalization for severe dengue with warning signs.",
+      "severity": "moderate-to-severe",
+      "treatment": "Supportive care, oral/IV hydration, paracetamol for fever (avoid aspirin/NSAIDs), platelet monitoring",
+      "when_to_see_doctor": "Immediately if severe abdominal pain, persistent vomiting, bleeding, or rapid breathing"
+    },
+    {
+      "name": "Malaria",
+      "category": "Infectious Disease",
+      "symptoms": ["cyclical fever", "chills", "sweating", "headache", "nausea", "vomiting", "muscle pain", "fatigue", "anemia", "jaundice", "rapid breathing", "high temperature", "shaking"],
+      "description": "Malaria is a life-threatening disease caused by Plasmodium parasites transmitted through the bites of infected female Anopheles mosquitoes. P. falciparum is the most dangerous species and responsible for most malaria deaths. It is prevalent in tropical and subtropical regions, particularly sub-Saharan Africa.",
+      "diagnosis": "Thick and thin blood smears (gold standard), rapid diagnostic tests (RDTs), or PCR testing. Treatment depends on Plasmodium species: artemisinin-based combination therapies (ACTs) for P. falciparum; chloroquine for P. vivax (in sensitive regions). Severe malaria requires IV artesunate. Prophylaxis is important for travelers to endemic areas.",
+      "severity": "serious (potentially life-threatening)",
+      "treatment": "Artemisinin-based combination therapy, IV artesunate for severe cases, supportive care",
+      "when_to_see_doctor": "Immediately — malaria can become life-threatening within 24 hours"
+    },
+    {
+      "name": "Appendicitis",
+      "category": "Surgical/Gastrointestinal",
+      "symptoms": ["sudden abdominal pain", "pain around navel", "pain moves to lower right", "nausea", "vomiting", "fever", "loss of appetite", "rebound tenderness", "abdominal rigidity", "diarrhea or constipation"],
+      "description": "Appendicitis is inflammation of the appendix, a small finger-shaped pouch projecting from the colon. It is one of the most common reasons for emergency abdominal surgery. It can occur at any age but is most common between 10 and 30. If the appendix ruptures, it can cause peritonitis, a potentially fatal infection.",
+      "diagnosis": "Physical examination, blood tests (elevated WBC), ultrasound, or CT scan of abdomen. Alvarado score assists in clinical decision-making. Treatment is surgical removal (appendectomy), performed laparoscopically or as open surgery. Antibiotics are given before and after surgery. Early diagnosis is critical to prevent perforation.",
+      "severity": "serious (requires emergency surgery)",
+      "treatment": "Immediate appendectomy (laparoscopic or open), IV antibiotics",
+      "when_to_see_doctor": "Immediately — this is a medical emergency"
+    },
+    {
+      "name": "Rheumatoid Arthritis",
+      "category": "Autoimmune/Musculoskeletal",
+      "symptoms": ["joint pain", "joint swelling", "joint stiffness in morning", "multiple joint involvement", "fatigue", "fever", "loss of appetite", "symmetric joint involvement", "rheumatoid nodules", "dry eyes", "dry mouth"],
+      "description": "Rheumatoid arthritis (RA) is a chronic autoimmune disease that primarily affects joints, causing inflammation, pain, swelling, and eventual bone erosion and joint deformity. Unlike osteoarthritis, RA affects the synovial lining of joints. It can also affect other organ systems including skin, eyes, lungs, heart, and blood vessels.",
+      "diagnosis": "Diagnosed using clinical criteria, blood tests (RF, anti-CCP antibodies, CRP, ESR), and imaging (X-ray, MRI). Early aggressive treatment is essential to prevent joint damage. DMARDs (methotrexate is gold standard), biologics (TNF inhibitors, IL-6 inhibitors), and JAK inhibitors are mainstays of treatment. Regular monitoring of disease activity and medication side effects is required.",
+      "severity": "chronic/serious",
+      "treatment": "DMARDs (methotrexate), biologics, JAK inhibitors, NSAIDs, physical therapy",
+      "when_to_see_doctor": "If multiple joints are swollen and painful for more than 6 weeks"
+    },
+    {
+      "name": "Psoriasis",
+      "category": "Dermatological",
+      "symptoms": ["red skin patches", "silvery scales", "dry cracked skin", "itching", "burning skin", "thickened nails", "swollen joints", "skin plaques", "skin flaking", "elbow rash", "knee rash", "scalp plaques"],
+      "description": "Psoriasis is a chronic autoimmune skin condition that speeds up the life cycle of skin cells, causing cells to build up rapidly on the surface of the skin. The extra skin cells form scales and red patches that can be itchy and sometimes painful. It is not contagious and tends to go through cycles — flaring for a few weeks or months, then subsiding.",
+      "diagnosis": "Primarily clinical diagnosis based on skin appearance. Skin biopsy may be performed to rule out other conditions. Treatment depends on severity: topical corticosteroids, vitamin D analogues, and retinoids for mild-to-moderate; phototherapy for moderate; systemic medications (methotrexate, cyclosporine) or biologics (TNF-alfa inhibitors, IL-17 inhibitors) for severe psoriasis.",
+      "severity": "chronic/variable",
+      "treatment": "Topical steroids, vitamin D analogues, phototherapy, biologics, systemic medications",
+      "when_to_see_doctor": "If skin condition worsens, involves large areas, or is accompanied by joint pain"
+    },
+    {
+      "name": "Kidney Stones",
+      "category": "Urological",
+      "symptoms": ["severe flank pain", "pain radiating to groin", "blood in urine", "nausea", "vomiting", "frequent urination", "painful urination", "cloudy urine", "lower abdominal pain", "back pain", "fever if infected"],
+      "description": "Kidney stones are hard deposits made of minerals and salts that form inside the kidneys. They can affect any part of the urinary tract — from the kidneys to the bladder. Passing them can be extremely painful. Risk factors include dehydration, diet high in protein/sodium/sugar, obesity, family history, and certain medical conditions.",
+      "diagnosis": "CT scan (gold standard), ultrasound, or KUB X-ray confirms stones. Urinalysis detects blood/infection. For small stones (<5mm) — watchful waiting with pain management, NSAIDs, and alpha-blockers (tamsulosin) to facilitate passage. Larger stones require extracorporeal shock wave lithotripsy (ESWL), ureteroscopy, or percutaneous nephrolithotomy. Dietary modifications prevent recurrence.",
+      "severity": "moderate-to-severe",
+      "treatment": "Pain management, hydration, alpha-blockers; ESWL or surgery for larger stones",
+      "when_to_see_doctor": "Immediately if severe pain, fever, or inability to urinate"
+    },
+    {
+      "name": "Gastroesophageal Reflux Disease (GERD)",
+      "category": "Gastrointestinal",
+      "symptoms": ["heartburn", "acid reflux", "chest pain", "difficulty swallowing", "regurgitation", "chronic cough", "hoarse voice", "sore throat", "bloating", "nausea", "bad breath", "sour taste in mouth"],
+      "description": "GERD is a chronic digestive disorder where stomach acid or bile irritates the food pipe lining. It occurs when the lower esophageal sphincter (LES) weakens or relaxes inappropriately, allowing stomach contents to flow back up. If left untreated, GERD can cause esophagitis, Barrett's esophagus, and increased risk of esophageal cancer.",
+      "diagnosis": "Clinical diagnosis supported by endoscopy, pH monitoring, or esophageal manometry. Lifestyle modifications are first-line: elevating bed head, avoiding trigger foods, smaller meals, weight loss, stopping smoking. Medications include antacids, H2 blockers (ranitidine), and proton pump inhibitors (omeprazole). Surgery (fundoplication) for refractory cases.",
+      "severity": "chronic/manageable",
+      "treatment": "PPIs, H2 blockers, antacids, lifestyle modifications, surgery in severe cases",
+      "when_to_see_doctor": "If symptoms occur more than twice weekly, or with difficulty swallowing or unexplained weight loss"
+    },
+    {
+      "name": "Stroke",
+      "category": "Neurological/Emergency",
+      "symptoms": ["sudden numbness", "facial drooping", "arm weakness", "speech difficulty", "confusion", "sudden severe headache", "vision problems", "loss of balance", "dizziness", "trouble walking", "slurred speech"],
+      "description": "A stroke occurs when blood supply to part of the brain is cut off, either by a blood clot (ischemic stroke, 87% of cases) or a burst blood vessel (hemorrhagic stroke). Brain cells begin to die within minutes without oxygen and nutrients. It is a medical emergency — time is brain. Remember FAST: Face drooping, Arm weakness, Speech difficulty, Time to call emergency.",
+      "diagnosis": "CT scan rules out hemorrhage; MRI/MRA for detailed assessment. IV thrombolysis (tPA) within 4.5 hours for ischemic stroke; mechanical thrombectomy within 24 hours. Hemorrhagic stroke may require surgery. Secondary prevention with antiplatelets, anticoagulants, statins, and blood pressure control. Rehabilitation is crucial for recovery.",
+      "severity": "life-threatening (emergency)",
+      "treatment": "IMMEDIATE: tPA within 4.5 hours, thrombectomy, supportive care, rehabilitation",
+      "when_to_see_doctor": "CALL EMERGENCY SERVICES IMMEDIATELY — stroke is a medical emergency"
+    },
+    {
+      "name": "Heart Attack (Myocardial Infarction)",
+      "category": "Cardiovascular/Emergency",
+      "symptoms": ["chest pain", "chest tightness", "chest pressure", "radiating arm pain", "left arm pain", "jaw pain", "shortness of breath", "sweating", "nausea", "dizziness", "lightheadedness", "cold sweat", "back pain"],
+      "description": "A heart attack occurs when blood flow to a part of the heart is blocked, usually by a blood clot, causing heart muscle to die from lack of oxygen. Most heart attacks are caused by coronary artery disease. Symptoms may differ between men and women — women are more likely to experience jaw pain, nausea, and extreme fatigue without classic chest pain.",
+      "diagnosis": "ECG changes (ST elevation, T-wave inversions), elevated cardiac troponins, and clinical symptoms establish diagnosis. STEMI requires immediate coronary angioplasty (PCI) or thrombolysis. NSTEMI/UA managed with antiplatelet therapy, anticoagulation, and PCI. Post-MI management includes dual antiplatelet therapy, statins, beta-blockers, and ACE inhibitors.",
+      "severity": "life-threatening (emergency)",
+      "treatment": "IMMEDIATE: Aspirin, PCI/thrombolysis, anticoagulants, cardiac monitoring; long-term medications",
+      "when_to_see_doctor": "CALL EMERGENCY SERVICES IMMEDIATELY — time is muscle"
+    },
+    {
+      "name": "Chickenpox (Varicella)",
+      "category": "Infectious Disease",
+      "symptoms": ["itchy blisters", "red rash", "fever", "fatigue", "headache", "loss of appetite", "fluid filled blisters", "crusting blisters", "widespread rash", "sore throat"],
+      "description": "Chickenpox is a highly contagious infection caused by the varicella-zoster virus. It causes an itchy rash with small, fluid-filled blisters that appear in stages over 2-4 days and then scab over. It spreads easily through coughing, sneezing, or contact with blister fluid. After recovery, the virus stays dormant and can reactivate as shingles.",
+      "diagnosis": "Primarily clinical diagnosis based on characteristic rash appearance. PCR testing or DFA of vesicular fluid can confirm. Management is supportive: antihistamines for itching, calamine lotion, acetaminophen for fever (NOT aspirin — risk of Reye's syndrome). Acyclovir within 24 hours of rash onset for immunocompromised individuals. Varicella vaccine is highly effective prevention.",
+      "severity": "mild-to-moderate (can be severe in immunocompromised)",
+      "treatment": "Supportive care, antihistamines, calamine lotion; acyclovir for high-risk groups; varicella vaccine",
+      "when_to_see_doctor": "If immunocompromised, pregnant, rash on face/spreading rapidly, high fever, or signs of secondary infection"
+    },
+    {
+      "name": "Hyperthyroidism",
+      "category": "Endocrine",
+      "symptoms": ["weight loss", "rapid heartbeat", "irregular heartbeat", "increased appetite", "nervousness", "anxiety", "tremors", "sweating", "heat sensitivity", "frequent bowel movements", "enlarged thyroid", "sleep problems", "muscle weakness", "hair thinning"],
+      "description": "Hyperthyroidism occurs when the thyroid gland produces too much thyroid hormone, accelerating the body's metabolism. Graves' disease (autoimmune) is the most common cause. It affects women more often and can cause the eyes to bulge (Graves' ophthalmopathy). Thyroid storm is a rare, life-threatening complication.",
+      "diagnosis": "Blood tests show low TSH with high free T4 and T3. Thyroid scan helps identify cause. Treatment options: antithyroid medications (methimazole, propylthiouracil), radioactive iodine therapy, or thyroidectomy. Beta-blockers provide symptomatic relief. Follow-up for hypothyroidism after radioiodine or surgery is essential.",
+      "severity": "moderate-to-serious",
+      "treatment": "Antithyroid medications, radioactive iodine, thyroidectomy, beta-blockers for symptoms",
+      "when_to_see_doctor": "If symptoms are present, or immediately if palpitations, fever, and confusion occur (thyroid storm)"
+    },
+    {
+      "name": "Conjunctivitis (Pink Eye)",
+      "category": "Ophthalmological",
+      "symptoms": ["red eyes", "itchy eyes", "watery eyes", "eye discharge", "crusty eyes in morning", "burning eyes", "photophobia", "blurred vision", "swollen eyelids", "gritty feeling in eyes"],
+      "description": "Conjunctivitis is inflammation of the conjunctiva — the thin clear tissue lining the inside of the eyelid. It can be caused by viruses (most common, often with cold or flu), bacteria, allergens, or chemical irritants. Viral and bacterial conjunctivitis are contagious and spread through direct or indirect contact.",
+      "diagnosis": "Clinical diagnosis based on presentation. Eye swab culture for bacterial type. Viral conjunctivitis is self-limiting — cool compresses and artificial tears. Bacterial conjunctivitis treated with antibiotic eye drops (tobramycin, ciprofloxacin). Allergic conjunctivitis managed with antihistamine drops and allergen avoidance. Good hygiene prevents spread.",
+      "severity": "mild",
+      "treatment": "Viral: supportive; Bacterial: antibiotic drops; Allergic: antihistamine drops",
+      "when_to_see_doctor": "If vision changes, severe pain, photophobia, or no improvement after 5-7 days"
+    },
+    {
+      "name": "Sinusitis",
+      "category": "ENT (Ear, Nose, Throat)",
+      "symptoms": ["facial pain", "facial pressure", "nasal congestion", "thick nasal discharge", "post nasal drip", "reduced sense of smell", "headache", "fever", "cough", "fatigue", "bad breath", "toothache"],
+      "description": "Sinusitis is inflammation of the sinuses, usually caused by viral infection following a common cold, though bacterial, fungal, or allergic causes are also possible. Acute sinusitis lasts less than 4 weeks; chronic sinusitis persists beyond 12 weeks. It affects millions of people annually and is a leading reason for antibiotic prescriptions.",
+      "diagnosis": "Primarily clinical. CT scan for chronic or recurrent cases. Most acute sinusitis is viral — antibiotics not recommended initially. Symptom relief with nasal saline irrigation, decongestants, nasal corticosteroids. Bacterial sinusitis (symptoms >10 days, severe facial pain, high fever) treated with amoxicillin-clavulanate. Surgery (FESS) for refractory chronic sinusitis.",
+      "severity": "mild-to-moderate",
+      "treatment": "Saline irrigation, nasal steroids, antibiotics if bacterial, decongestants, surgery if chronic",
+      "when_to_see_doctor": "If symptoms last >10 days, are severe, or if high fever or swollen eyes develop"
+    },
+    {
+      "name": "Lupus (SLE)",
+      "category": "Autoimmune",
+      "symptoms": ["butterfly rash on face", "joint pain", "fatigue", "fever", "photosensitivity", "hair loss", "mouth ulcers", "chest pain", "dry eyes", "headaches", "memory problems", "swollen lymph nodes", "anemia"],
+      "description": "Systemic lupus erythematosus (SLE) is a chronic autoimmune disease where the immune system attacks healthy tissue in many parts of the body — joints, skin, kidneys, blood cells, brain, heart, and lungs. The hallmark butterfly-shaped rash across the cheeks is distinctive. It primarily affects women of childbearing age.",
+      "diagnosis": "At least 4 of 11 ACR criteria, ANA (antinuclear antibody) testing, anti-dsDNA antibodies, complement levels. Urine analysis for renal involvement. Treatment is individualized: NSAIDs, antimalarials (hydroxychloroquine), corticosteroids, and immunosuppressants (azathioprine, mycophenolate). Belimumab (biologic) for refractory cases.",
+      "severity": "chronic/serious",
+      "treatment": "Hydroxychloroquine, corticosteroids, immunosuppressants, NSAIDs, sun protection",
+      "when_to_see_doctor": "If rash combined with joint pain and fatigue, or any organ involvement symptoms"
+    }
+  ]
+}

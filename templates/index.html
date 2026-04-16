@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Disease Predictor — Intelligent Symptom Analysis</title>
+  <meta name="description" content="AI-Disease Predictor uses advanced natural language processing to analyze your symptoms and provide intelligent disease predictions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <!-- ── Animated Background ── -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ── Header ── -->
+  <header class="header" role="banner">
+    <div class="header-inner container">
+      <div class="logo" aria-label="MediSense AI">
+        <div class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="url(#grad1)" stroke-width="2.5"/>
+            <path d="M20 11v18M11 20h18" stroke="url(#grad2)" stroke-width="3" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="grad1" x1="2" y1="2" x2="38" y2="38">
+                <stop stop-color="#6ee7f7"/>
+                <stop offset="1" stop-color="#a78bfa"/>
+              </linearGradient>
+              <linearGradient id="grad2" x1="2" y1="2" x2="38" y2="38">
+                <stop stop-color="#6ee7f7"/>
+                <stop offset="1" stop-color="#a78bfa"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">AI-Disease</span>
+          <span class="logo-tag">Predictor</span>
+        </div>
+      </div>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#analyzer" class="nav-link" id="nav-analyzer">Analyzer</a>
+        <span class="nav-badge" aria-label="Beta version">Beta</span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ── Hero ── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            Describe Your Symptoms.<br />
+            <span class="gradient-text">Get Intelligent Insights.</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Analyzer Section ── -->
+    <section class="analyzer-section" id="analyzer" aria-labelledby="analyzer-title">
+      <div class="container">
+        <div class="analyzer-card glass-card" role="main">
+          <div class="analyzer-header">
+            <h2 class="section-title" id="analyzer-title">
+              <span class="title-icon" aria-hidden="true">🩺</span>
+              Symptom Analyzer
+            </h2>
+            <p class="section-subtitle">
+              Describe your symptoms in plain English — be as detailed as you like.
+              Include duration, severity, and any relevant context.
+            </p>
+          </div>
+
+          <!-- Input Area -->
+          <form id="symptom-form" class="symptom-form" aria-label="Symptom input form" novalidate>
+            <div class="input-wrapper">
+              <label for="symptom-input" class="visually-hidden">Describe your symptoms</label>
+              <textarea
+                id="symptom-input"
+                name="symptoms"
+                placeholder="e.g. I've had a high fever, severe headache, joint pain and a rash for the past 2 days. I also feel very fatigued and have no appetite..."
+                rows="4"
+                aria-describedby="input-hint char-count"
+                maxlength="1000"
+                autocomplete="off"
+                spellcheck="true"
+              ></textarea>
+              <div class="textarea-footer">
+                <span id="input-hint" class="input-hint" role="note">
+                  💡 Be specific: mention location, duration, and severity
+                </span>
+                <span id="char-count" class="char-count" aria-live="polite">0 / 1000</span>
+              </div>
+            </div>
+
+            <!-- Example Queries -->
+            <div class="examples-section" aria-labelledby="examples-label">
+              <span class="examples-label" id="examples-label">Try an example:</span>
+              <div class="example-pills" id="example-pills" role="list" aria-label="Example symptom queries">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" id="analyze-btn" class="btn btn-primary" aria-describedby="btn-desc">
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5z" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="btn-text">Analyze Symptoms</span>
+                <span class="btn-loader" aria-hidden="true"></span>
+              </button>
+              <button type="button" id="clear-btn" class="btn btn-ghost" aria-label="Clear input">
+                Clear
+              </button>
+            </div>
+            <p id="btn-desc" class="visually-hidden">Analyzes your symptoms using AI to predict possible conditions</p>
+          </form>
+        </div>
+
+        <!-- Results Area -->
+        <div id="results-area" class="results-area" aria-live="polite" aria-atomic="false" role="region" aria-label="Analysis results">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ── Disclaimer Banner ── -->
+    <section class="disclaimer-section" aria-label="Medical disclaimer">
+      <div class="container">
+        <div class="disclaimer-card" role="alert">
+          <div class="disclaimer-icon" aria-hidden="true">⚕️</div>
+          <div class="disclaimer-text">
+            <strong>Medical Disclaimer</strong>
+            <p>MediSense AI is an educational tool only. It does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional for medical concerns. In emergencies, call emergency services immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Built with ❤️ by <strong>AI-Disease Predictor</strong> — For educational purposes only.
+        Not a substitute for professional medical advice.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Results Templates (hidden) -->
+  <template id="result-card-template">
+    <article class="result-card glass-card" aria-label="Disease prediction result">
+      <div class="result-card-header">
+        <div class="result-rank-badge" aria-label="Rank"></div>
+        <div class="result-title-block">
+          <h3 class="result-disease-name"></h3>
+          <div class="result-meta">
+            <span class="result-category tag"></span>
+            <span class="result-severity tag"></span>
+          </div>
+        </div>
+        <div class="confidence-ring-wrapper" aria-label="Confidence score">
+          <svg class="confidence-ring" viewBox="0 0 80 80" aria-hidden="true">
+            <circle class="ring-bg" cx="40" cy="40" r="32"/>
+            <circle class="ring-fill" cx="40" cy="40" r="32"/>
+          </svg>
+          <div class="confidence-text">
+            <span class="confidence-val"></span>
+            <span class="confidence-pct">%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expandable Sections -->
+      <div class="result-sections">
+        <details class="result-detail" open>
+          <summary class="detail-summary">
+            <span class="detail-icon" aria-hidden="true">📖</span>
+            About this Condition
+          </summary>
+          <div class="detail-content description-content"></div>
+        </details>
+
+        <details class="result-detail">
+          <summary class="detail-summary">
+            <span class="detail-icon" aria-hidden="true">🔬</span>
+            Diagnosis &amp; Treatment
+          </summary>
+          <div class="detail-content diagnosis-content"></div>
+        </details>
+
+        <details class="result-detail">
+          <summary class="detail-summary">
+            <span class="detail-icon" aria-hidden="true">💊</span>
+            Treatment Options
+          </summary>
+          <div class="detail-content treatment-content"></div>
+        </details>
+
+        <details class="result-detail">
+          <summary class="detail-summary">
+            <span class="detail-icon" aria-hidden="true">🏥</span>
+            When to See a Doctor
+          </summary>
+          <div class="detail-content doctor-content"></div>
+        </details>
+      </div>
+    </article>
+  </template>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
