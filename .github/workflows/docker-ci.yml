@@ -1,0 +1,53 @@
+name: Docker CI & Smoke Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker Image
+        run: |
+          docker build -t medisense-test .
+
+      - name: Run Container for Smoke Test
+        run: |
+          # Start the container in the background
+          docker run -d -p 5001:5001 --name tester medisense-test
+          
+          # Wait for the app to initialize (NLTK downloads can take a few seconds)
+          echo "Waiting for app to start..."
+          sleep 15
+          
+          # Check logs to see if it's running
+          docker logs tester
+
+      - name: Verify Health Check
+        run: |
+          # Use curl to hit the health endpoint we defined in app.py
+          RESPONSE=$(curl -s http://localhost:5001/api/health)
+          echo "Response: $RESPONSE"
+          
+          if [[ "$RESPONSE" == *"ok"* ]]; then
+            echo "Health check passed!"
+          else
+            echo "Health check failed!"
+            exit 1
+          fi
+
+      - name: Stop and Cleanup
+        if: always()
+        run: |
+          docker stop tester || true
+          docker rm tester || true
